@@ -34,7 +34,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Search"
-          className="input input-bordered w-full h-full py-2 max-w-xs bg-transparent border-gray-500 rounded-full text-white"
+          className="w-full h-full max-w-xs py-2 text-white bg-transparent border-gray-500 rounded-full input input-bordered"
         />
         <FaSearchDollar className="absolute top-[25%] right-[8%] text-gray-400 text-xl" />
       </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
       </button>
 
       <CiMenuFries
-        className="lg:hidden text-white text-2xl"
+        className="text-2xl text-white lg:hidden"
         onClick={() => setMenu(!menu)}
       />
       {/* Mobile Menu */}
@@ -63,12 +63,12 @@ const Navbar = () => {
               onClick={() => setMenu(!menu)}
             />
 
-            <ul className="h-screen  text-white flex flex-col justify-evenly items-center text-xl">
-              <li class="relative">
+            <ul className="flex flex-col items-center h-screen gap-8 text-xl text-white">
+              <li class="relative mt-16 mb-6">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="input input-bordered w-full h-full py-2 max-w-xs bg-transparent border-gray-500 rounded-full text-white"
+                  className="w-full h-full max-w-xs py-2 text-white bg-transparent border-gray-500 rounded-full input input-bordered"
                 />
                 <FaSearchDollar className="absolute top-[25%] right-[8%] text-gray-400 text-xl" />
               </li>
