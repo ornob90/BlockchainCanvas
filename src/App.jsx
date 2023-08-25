@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import HeroBanner from "./components/HeroBanner";
+import Navbar from "./components/Navbar";
 import fetchAPI from "./utils/api";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <HeroBanner />
     </>
   );

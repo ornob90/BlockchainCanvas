@@ -7,7 +7,7 @@ import ContentWrapper from "./ContentWrapper";
 
 const HeroBanner = () => {
   return (
-    <header className="flex flex-col justify-center items-center w-full h-screen bg-gradient-to-br from-[#07010B]  via-[#020005] to-[#1B0029]">
+    <header className="pt-20 flex flex-col justify-center items-center w-full h-screen bg-gradient-to-br from-[#07010B]  via-[#020005] to-[#1B0029]">
       {/* Discover Unique NFTs, Track Crypto Prices */}
 
       {/* Wrapper */}
