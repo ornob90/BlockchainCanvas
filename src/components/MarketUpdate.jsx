@@ -22,7 +22,7 @@ const MarketUpdate = () => {
           <p>Market Cap</p>
         </div>
 
-        <div className="px-4 rounded-t-lg text-sm sm:text-md md:text-xl lg:text-3xl border-b-[1px] w-full flex justify-between items-center py-3 mt-2">
+        <div className="px-4 rounded-t-lg text-sm sm:text-md md:text-xl lg:text-3xl border-b-[1px] w-full flex justify-between items-center py-3 mt-2 hover:bg-[#200840] duration-100">
           <div className="flex gap-2 w-[10%]">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkkwMIGYl9uv9YnMYvqaBS0M-a8nyBaEb0CQ&usqp=CAU"
