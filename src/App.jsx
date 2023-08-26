@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CreateSell from "./components/CreateSell";
 import Drop from "./components/Drop";
 import HeroBanner from "./components/HeroBanner";
 import JoinUs from "./components/JoinUs";
@@ -27,6 +28,7 @@ function App() {
       <Marketplace />
       <MarketUpdate />
       <Drop />
+      <CreateSell />
       <JoinUs />
     </NftContext.Provider>
   );

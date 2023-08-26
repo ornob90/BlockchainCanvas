@@ -10,13 +10,13 @@ const Drop = () => {
           Subscribe to our super-exclusive drop list and be the first to know
           about upcoming drops
         </p>
-        <div className="flex flex-col sm:flex-row gap-8 w-full justify-center">
+        <div className="flex flex-col sm:flex-row gap-8 w-full items-center justify-center">
           <input
             type="text"
-            className="input bg-[#1A2344] pr-[10%] lg:pr-[15%] pl-6 rounded-xl"
+            className="input w-4/5 sm:w-auto bg-[#1A2344] pr-[10%] lg:pr-[15%] pl-6 rounded-xl"
             placeholder="Enter your email address"
           />
-          <button className="bg-[#1E50FF] rounded-2xl py-2 w-[25%] sm:w-[20%] lg:w-[10%] md:w-[13%] text-sm">
+          <button className="bg-[#1E50FF] rounded-2xl py-2 w-[30%] sm:w-[20%] lg:w-[10%] md:w-[13%] text-sm">
             Subscribe
           </button>
         </div>
