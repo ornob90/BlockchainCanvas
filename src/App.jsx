@@ -7,6 +7,7 @@ import MarketUpdate from "./components/MarketUpdate";
 import Marketplace from "./components/Marketplace";
 import Navbar from "./components/Navbar";
 import Topcreator from "./components/Topcreator";
+import WhyChooseUs from "./components/WhyChooseUs";
 import NftContext from "./context/NftContext";
 import useFetch from "./hooks/useFetch";
 import fetchAPI from "./utils/api";
@@ -31,6 +32,7 @@ function App() {
       <Drop />
       <CreateSell />
       <Topcreator />
+      <WhyChooseUs />
       <JoinUs />
     </NftContext.Provider>
   );
