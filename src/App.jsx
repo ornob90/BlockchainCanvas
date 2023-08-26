@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
-import CreateSell from "./components/CreateSell";
-import Drop from "./components/Drop";
-import HeroBanner from "./components/HeroBanner";
-import JoinUs from "./components/JoinUs";
-import MarketUpdate from "./components/MarketUpdate";
-import Marketplace from "./components/Marketplace";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Topcreator from "./components/Topcreator";
-import WhyChooseUs from "./components/WhyChooseUs";
-import NftContext from "./context/NftContext";
-import useFetch from "./hooks/useFetch";
-import fetchAPI from "./utils/api";
+import Home from "./pages/Home";
+import CryptoDetails from "./pages/cryptoDetails";
 
 function App() {
   // const [page, setPage] = useState(1);
@@ -24,17 +15,13 @@ function App() {
   // });
 
   return (
-    <NftContext.Provider value={nftIds}>
+    <BrowserRouter>
       <Navbar />
-      <HeroBanner />
-      <Marketplace />
-      <MarketUpdate />
-      <Drop />
-      <CreateSell />
-      <Topcreator />
-      <WhyChooseUs />
-      <JoinUs />
-    </NftContext.Provider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coins/:id" element={<CryptoDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
