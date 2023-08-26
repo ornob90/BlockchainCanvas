@@ -6,6 +6,7 @@ import JoinUs from "./components/JoinUs";
 import MarketUpdate from "./components/MarketUpdate";
 import Marketplace from "./components/Marketplace";
 import Navbar from "./components/Navbar";
+import Topcreator from "./components/Topcreator";
 import NftContext from "./context/NftContext";
 import useFetch from "./hooks/useFetch";
 import fetchAPI from "./utils/api";
@@ -29,6 +30,7 @@ function App() {
       <MarketUpdate />
       <Drop />
       <CreateSell />
+      <Topcreator />
       <JoinUs />
     </NftContext.Provider>
   );
