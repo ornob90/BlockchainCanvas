@@ -62,11 +62,11 @@ const CryptoDetails = () => {
   // };
 
   return (
-    <div className="w-full h-screen min-h-[300px] bg-gradient-to-br from-[#07010B]  via-[#020005] to-[#1B0029] ">
+    <div className="w-full lg:h-screen min-h-[300px] bg-gradient-to-br from-[#07010B]  via-[#020005] to-[#1B0029] pb-16">
       {loading && (
         <ContentWrapper>
-          <div className="flex justify-between pt-[10%] text-white items-center">
-            <div className="w-[70%] space-y-8">
+          <div className="flex flex-col-reverse lg:flex-row justify-between pt-[10%] text-white items-center">
+            <div className="w-full lg:w-[70%] space-y-8">
               <h1 className="text-6xl font-bold"></h1>
               <div className="textarea bg-transparent border border-white textarea-lg w-[80%] h-48 no-scrollbar flex justify-center items-center">
                 <Loading />
@@ -75,7 +75,7 @@ const CryptoDetails = () => {
               <div className="grid grid-cols-3 text-3xl font-bold">
                 <p>Price</p>
                 <p>Market Cap</p>
-                <p>24h Change</p>
+                <p className="hidden md:block">24h Change</p>
               </div>
 
               <div className="grid grid-cols-3 text-xl ">
@@ -93,27 +93,29 @@ const CryptoDetails = () => {
 
       {!loading && (
         <ContentWrapper>
-          <div className="flex justify-between pt-[10%] text-white items-center">
-            <div className="w-[70%] space-y-8">
+          <div className="flex flex-col-reverse lg:flex-row justify-between pt-24 lg:pt-[10%] text-white items-center ">
+            <div className="w-full lg:w-[70%] space-y-8">
               <h1 className="text-6xl font-bold">{name}</h1>
               <textarea
                 defaultValue={description}
                 placeholder="Description"
-                className="textarea bg-transparent border border-white textarea-lg w-[80%] h-48 no-scrollbar"
+                className="textarea bg-transparent border border-white textarea-lg w-full lg:w-[80%] h-48 no-scrollbar"
               ></textarea>
 
-              <div className="grid grid-cols-3 text-3xl font-bold">
+              <div className="grid grid-cols-2 text-2xl font-bold md:grid-cols-3 lg:text-3xl">
                 <p>Price</p>
                 <p>Market Cap</p>
-                <p>24h Change</p>
+                <p className="hidden md:block">24h Change</p>
               </div>
 
-              <div className="grid grid-cols-3 text-xl ">
+              <div className="grid grid-cols-2 md:grid-cols-3 text-md lg:text-xl ">
                 <p>{price}$</p>
                 <p>{marketCap}</p>
                 <p
                   className={
-                    priceChange24H < 0 ? "text-red-600" : "text-green-600"
+                    priceChange24H < 0
+                      ? "text-red-600 hidden md:block"
+                      : "text-green-600 hidden md:block"
                   }
                 >
                   {priceChange24H}%
