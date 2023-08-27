@@ -35,7 +35,7 @@ const MarketUpdate = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#0F051D]  w-full text-white pb-10">
+    <div id="market" className="bg-[#0F051D]  w-full text-white pb-10">
       <ContentWrapper>
         {/* Content */}
         <div className="flex flex-col items-center justify-center w-full pt-10">

@@ -2,8 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="py-20 bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000] n p-10 bg-base-200 text-white">
-      <div className="flex justify-between flex-col lg:flex-row w-4/5 mx-auto gap-8 lg:gap-0">
+    <footer
+      id="contact"
+      className="py-20 bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000] n p-10 bg-base-200 text-white"
+    >
+      <div className="flex flex-col justify-between w-4/5 gap-8 mx-auto lg:flex-row lg:gap-0">
         <div className="w-full lg:w-2/5">
           <img
             src="https://cdn.iconscout.com/icon/premium/png-512-thumb/nft-community-5613089-4669010.png?f=avif&w=256"
@@ -17,9 +20,9 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className=" flex flex-col gap-8 sm:gap-0 sm:flex-row justify-between w-full lg:w-2/4 text-left">
+        <div className="flex flex-col justify-between w-full gap-8 text-left sm:gap-0 sm:flex-row lg:w-2/4">
           <div className="text-[#9EA0AC] grid grid-cols-1 text-md sm:text-base text-sm">
-            <span className="text-3xl sm:text-lg md:text-xl font-bold text-white">
+            <span className="text-3xl font-bold text-white sm:text-lg md:text-xl">
               Marketplace
             </span>
             <a className="link link-hover">Explore</a>
@@ -29,7 +32,7 @@ const Footer = () => {
           </div>
 
           <div className="text-[#9EA0AC] grid grid-cols-1 text-md sm:text-base text-sm">
-            <span className="text-3xl sm:text-lg md:text-xl font-bold text-white">
+            <span className="text-3xl font-bold text-white sm:text-lg md:text-xl">
               Resources
             </span>
             <a className="link link-hover">Help center</a>
@@ -40,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div className="text-[#9EA0AC] grid grid-cols-1 text-md sm:text-base text-sm">
-            <span className="text-3xl sm:text-lg md:text-xl font-bold text-white">
+            <span className="text-3xl font-bold text-white sm:text-lg md:text-xl">
               Company
             </span>
             <a className="link link-hover">About Us</a>

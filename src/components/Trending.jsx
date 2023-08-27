@@ -4,11 +4,14 @@ import { useNavigate } from "react-router";
 import trendingData from "../data/trending-data";
 import ContentWrapper from "./ContentWrapper";
 
-const Marketplace = () => {
+const Trending = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="py-10 bg-gradient-to-br from-[#0B021A] to-[#090D2A] text-white">
+    <div
+      id="trending"
+      className="py-10 bg-gradient-to-br from-[#0B021A] to-[#090D2A] text-white"
+    >
       <ContentWrapper>
         <p className="text-[#ad2ef2] text-center font-bold text-sm">
           Crypto Marketplace
@@ -58,4 +61,4 @@ const Marketplace = () => {
   );
 };
 
-export default Marketplace;
+export default Trending;

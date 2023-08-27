@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
 import JoinUs from "../components/JoinUs";
 import MarketUpdate from "../components/MarketUpdate";
-import Marketplace from "../components/Marketplace";
+import Trending from "../components/Trending";
 
 import Topcreator from "../components/Topcreator";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -14,7 +14,7 @@ function Home() {
     <>
       <HeroBanner />
       <MarketUpdate />
-      <Marketplace />
+      <Trending />
       <Drop />
       <CreateSell />
       <Topcreator />

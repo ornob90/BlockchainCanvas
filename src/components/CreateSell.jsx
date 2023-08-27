@@ -30,18 +30,18 @@ const CreateSell = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000]">
+    <div id="nft" className="bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000]">
       <ContentWrapper>
         <p className="text-[#ad2ef2] text-center font-bold text-sm">
           How to be a creator
         </p>
 
-        <div className="text-white flex items-center justify-center gap-2 text-2xl font-bold lg:text-4xl">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold text-white lg:text-4xl">
           <h1 className="">Create and sell your NFTs</h1>
         </div>
 
         {/* Card List */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 py-16 gap-8">
+        <div className="grid grid-cols-1 gap-8 py-16 lg:grid-cols-3">
           {/* Card */}
 
           {cardsContent.map(({ id, src, name, overview }) => (
@@ -53,7 +53,7 @@ const CreateSell = () => {
                 <img src={src} alt="" className="w-2/5" />
               </div>
 
-              <p className="text-white text-2xl font-bold ">{name}</p>
+              <p className="text-2xl font-bold text-white ">{name}</p>
               <p className="text-[#878787] text-sm">{overview}</p>
             </div>
           ))}
@@ -63,7 +63,7 @@ const CreateSell = () => {
           <button className="rounded-full btn bg-[#1E50FF] border-none text-white">
             Create Now
           </button>
-          <button className="rounded-full btn bg-transparent border-white border-1 text-white">
+          <button className="text-white bg-transparent border-white rounded-full btn border-1">
             Watch Video
           </button>
         </div>

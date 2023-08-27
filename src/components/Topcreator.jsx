@@ -62,18 +62,21 @@ const Topcreator = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000]">
+    <div
+      id="creator"
+      className="bg-gradient-to-r from-[rgb(14,8,42)] to-[#000000]"
+    >
       <ContentWrapper>
         <p className="text-[#ad2ef2] text-center font-bold text-sm">
           NFT Creator
         </p>
 
-        <div className="text-white flex items-center justify-center gap-2 text-2xl font-bold lg:text-4xl">
+        <div className="flex items-center justify-center gap-2 text-2xl font-bold text-white lg:text-4xl">
           <h1 className="">Top Creator This Week</h1>
         </div>
 
         {/* Creators List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 gap-4">
+        <div className="grid grid-cols-1 gap-4 py-16 md:grid-cols-2 lg:grid-cols-3">
           {/* Creator */}
 
           {creators.map(({ id, src, name, assets }) => (
@@ -85,11 +88,11 @@ const Topcreator = () => {
                 <img
                   src={src}
                   alt=""
-                  className="rounded-2xl w-full h-full object-fill"
+                  className="object-fill w-full h-full rounded-2xl"
                 />
               </div>
               <div className="w-2/4">
-                <p className="text-xl font-bold pb-2">{name}</p>
+                <p className="pb-2 text-xl font-bold">{name}</p>
                 <div className="flex items-center gap-2">
                   <RiNftFill className="text-[rgb(103,132,237)] text-xl" />
                   <p className="text-[#909090]">{assets}</p>
