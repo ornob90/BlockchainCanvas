@@ -11,8 +11,8 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import NftContext from "../context/NftContext";
 import CryptoContext from "../context/cryptoContext";
 import useFetch from "../hooks/useFetch";
-import CryptoDetails from "../pages/cryptoDetails";
 import fetchAPI from "../utils/api";
+import CryptoDetails from "./cryptoDetails";
 
 function Home() {
   const nftIds = {};
