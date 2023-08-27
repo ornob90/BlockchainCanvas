@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import CryptoContext from "../context/cryptoContext";
-import marketData from "../data/market-data";
 import useFetch from "../hooks/useFetch";
 import ContentWrapper from "./ContentWrapper";
 

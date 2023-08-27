@@ -1,11 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
 import { BsFire, BsThreeDots } from "react-icons/bs";
 import { RiNftFill } from "react-icons/ri";
 import { useNavigate } from "react-router";
-import crystelImg from "../assets/crystel.png";
-import NftContext from "../context/NftContext";
 import trendingData from "../data/trending-data";
-import useFetch from "../hooks/useFetch";
 import ContentWrapper from "./ContentWrapper";
 
 const Marketplace = () => {
@@ -38,7 +34,7 @@ const Marketplace = () => {
 
               <div className="flex items-center justify-between w-full mt-4">
                 <div className="">
-                  <p className="font-bold text-2xl sm:text-xl">{item.name}</p>
+                  <p className="text-2xl font-bold sm:text-xl">{item.name}</p>
 
                   <h3 className="text-[#1D42CC] font-bold text-md sm:text-sm mt-2">
                     {item.price_btc} BTC

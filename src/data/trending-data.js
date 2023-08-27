@@ -1,3 +1,7 @@
+//id
+// name
+// price_btc
+// large
 const trendingData = {
   coins: [
     {

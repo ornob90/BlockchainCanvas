@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import CryptoDetail from "./pages/CryptoDetail";
 import Home from "./pages/Home";
-import CryptoDetails from "./pages/cryptoDetails";
 
 function App() {
   // const [page, setPage] = useState(1);
@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/coins/:id" element={<CryptoDetails />} />
+        <Route path="/coins/:id" element={<CryptoDetail />} />
       </Routes>
     </BrowserRouter>
   );

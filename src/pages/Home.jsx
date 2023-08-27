@@ -8,15 +8,8 @@ import Marketplace from "../components/Marketplace";
 
 import Topcreator from "../components/Topcreator";
 import WhyChooseUs from "../components/WhyChooseUs";
-import NftContext from "../context/NftContext";
-import CryptoContext from "../context/cryptoContext";
-import useFetch from "../hooks/useFetch";
-import fetchAPI from "../utils/api";
-import CryptoDetails from "./cryptoDetails";
 
 function Home() {
-  const nftIds = {};
-
   return (
     <>
       <HeroBanner />
