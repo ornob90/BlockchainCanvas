@@ -1,8 +1,13 @@
-# Project Name
+# BlockchainCanvas
+
+## Live URL
+```
+https://blockchain-canvas-ornob90.vercel.app
+```
 
 ## Description
 
-Provide a brief overview of your project, highlighting its purpose, main features, and the technologies used.
+A front end react website using React and Tailwind. It provides live prices of crypto coins and nfts. The data is collection from coingecko API. 
 
 ## Features
 
@@ -10,7 +15,7 @@ Provide a brief overview of your project, highlighting its purpose, main feature
 - **Detailed Information:** Explore detailed information about specific cryptocurrencies and NFTs.
 - **Responsive Design:** The website is fully responsive, ensuring a seamless experience across various devices.
 - **Modern UI:** The user interface is designed with modern aesthetics for an engaging user experience.
-- **Built with React and Tailwind CSS:** Leverage the power of React for a dynamic front-end and Tailwind CSS for a utility-first and highly customizable styling.
+
 
 ## Installation
 
