@@ -7,7 +7,7 @@ https://blockchain-canvas-ornob90.vercel.app
 
 ## Description
 
-A front end react website using React and Tailwind. It provides live prices of crypto coins and nfts. The data is collection from coingecko API. 
+A front end  website using React and Tailwind. It provides live prices of crypto coins and nfts. The data is collection from coingecko API. 
 
 ## Features
 
